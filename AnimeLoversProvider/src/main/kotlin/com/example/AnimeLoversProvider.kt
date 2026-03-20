@@ -99,21 +99,22 @@ class AnimeLoversProvider : MainAPI() {
                 episode = epNum
             }
         } ?: emptyList()
-        val animeLoad = newAnimeLoadResponse(
+        return newAnimeLoadResponse(
             data.judul ?: "Unknown",
             url,
             TvType.Anime,
-            mapOf(DubStatus.Subbed to episodes)
-        )
-        animeLoad.plot = data.sinopsis
-        animeLoad.posterUrl = data.cover
-        animeLoad.tags = data.genre
-        animeLoad.showStatus = when (data.status) {
-            "Ongoing" -> ShowStatus.Ongoing
-            "Completed" -> ShowStatus.Completed
-            else -> null
+            false
+        ) {
+            addEpisodes(DubStatus.Subbed, episodes)
+            plot = data.sinopsis
+            posterUrl = data.cover
+            tags = data.genre
+            showStatus = when (data.status) {
+                "Ongoing" -> ShowStatus.Ongoing
+                "Completed" -> ShowStatus.Completed
+                else -> null
+            }
         }
-        return animeLoad
     }
 
     override suspend fun loadLinks(
