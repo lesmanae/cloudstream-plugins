@@ -1,0 +1,9 @@
+{
+    "name": "Lesmanae Repo",
+    "iconUrl": "https://p16-novel-sg.ibyteimg.com/img/novel-images-sg/68f08493803fb36da77f705a508d95f7-tplv-resize:570:810.jpg",
+    "description": "Plugin Short Drama by lesmanae",
+    "manifestVersion": 1,
+    "pluginLists": [
+        "https://raw.githubusercontent.com/lesmanae/TestPlugins/builds/plugins.json"
+    ]
+}
