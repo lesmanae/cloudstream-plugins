@@ -99,21 +99,21 @@ class AnimeLoversProvider : MainAPI() {
                 episode = epNum
             }
         } ?: emptyList()
-        return newAnimeLoadResponse(
-            name = data.judul ?: "Unknown",
-            url = url,
-            type = TvType.Anime,
-            episodes = mapOf(DubStatus.Subbed to episodes)
-        ) {
-            plot = data.sinopsis
-            posterUrl = data.cover
-            tags = data.genre
-            showStatus = when (data.status) {
-                "Ongoing" -> ShowStatus.Ongoing
-                "Completed" -> ShowStatus.Completed
-                else -> null
-            }
+        val animeLoad = newAnimeLoadResponse(
+            data.judul ?: "Unknown",
+            url,
+            TvType.Anime,
+            mapOf(DubStatus.Subbed to episodes)
+        )
+        animeLoad.plot = data.sinopsis
+        animeLoad.posterUrl = data.cover
+        animeLoad.tags = data.genre
+        animeLoad.showStatus = when (data.status) {
+            "Ongoing" -> ShowStatus.Ongoing
+            "Completed" -> ShowStatus.Completed
+            else -> null
         }
+        return animeLoad
     }
 
     override suspend fun loadLinks(
@@ -141,3 +141,4 @@ class AnimeLoversProvider : MainAPI() {
         }
         return true
     }
+}
