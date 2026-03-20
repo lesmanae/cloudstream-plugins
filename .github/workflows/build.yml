@@ -6,8 +6,8 @@ concurrency:
   cancel-in-progress: true
 
 on:
+  workflow_dispatch:
   push:
-    workflow_dispatch:
     branches:
       # choose your default branch
       - master
