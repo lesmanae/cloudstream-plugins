@@ -23,6 +23,13 @@ class AnimeLoversProvider : MainAPI() {
     data class AHomeResponse(
         @JsonProperty("data") val data: List<AAnime>? = null
     )
+    data class ASearchData(
+        @JsonProperty("jumlah") val jumlah: Int? = null,
+        @JsonProperty("result") val result: List<AAnime>? = null
+    )
+    data class ASearchResponse(
+        @JsonProperty("data") val data: List<ASearchData>? = null
+    )
     data class AEpisode(
         @JsonProperty("id") val id: Int? = null,
         @JsonProperty("ch") val ch: String? = null,
@@ -74,8 +81,9 @@ class AnimeLoversProvider : MainAPI() {
     }
 
     override suspend fun search(query: String): List<SearchResponse> {
-        val res = app.get("$mainUrl/anime/search?query=$query&page=1").parsed<AHomeResponse>()
-        return res.data?.mapNotNull { anime ->
+        val res = app.get("$mainUrl/anime/search?query=$query&page=1").parsed<ASearchResponse>()
+        val results = res.data?.firstOrNull()?.result ?: emptyList()
+        return results.mapNotNull { anime ->
             val slug = anime.url?.trimEnd('/') ?: return@mapNotNull null
             newAnimeSearchResponse(
                 name = anime.judul ?: return@mapNotNull null,
@@ -84,7 +92,7 @@ class AnimeLoversProvider : MainAPI() {
             ) {
                 posterUrl = anime.cover
             }
-        } ?: emptyList()
+        }
     }
 
     override suspend fun load(url: String): LoadResponse {
