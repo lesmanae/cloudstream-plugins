@@ -19,7 +19,6 @@ class AnimeLoversProvider : MainAPI() {
         @JsonProperty("sinopsis") val sinopsis: String? = null,
         @JsonProperty("status") val status: String? = null,
         @JsonProperty("genre") val genre: List<String>? = null,
-        @JsonProperty("total_episode") val totalEpisode: Int? = null,
     )
     data class AHomeResponse(
         @JsonProperty("data") val data: List<AAnime>? = null
@@ -30,7 +29,6 @@ class AnimeLoversProvider : MainAPI() {
         @JsonProperty("url") val url: String? = null,
     )
     data class ADetail(
-        @JsonProperty("id") val id: Int? = null,
         @JsonProperty("series_id") val seriesId: String? = null,
         @JsonProperty("judul") val judul: String? = null,
         @JsonProperty("cover") val cover: String? = null,
@@ -143,4 +141,3 @@ class AnimeLoversProvider : MainAPI() {
         }
         return true
     }
-}
