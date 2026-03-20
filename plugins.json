@@ -1,0 +1,40 @@
+[
+    {
+        "iconUrl": "https://play-lh.googleusercontent.com/hD60wyoknlElZEqvTBRmfhpCDb5jbJvf9wVTqR9fbxLJ46je3yxDJHuJ3ECe9CWJbMc=w480-h960-rw",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/lesmanae/cloudstream-plugins",
+        "fileSize": 19260,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "lesmanae"
+        ],
+        "tvTypes": [
+            "Anime"
+        ],
+        "version": 1,
+        "internalName": "AnimeLoversProvider",
+        "description": "Anime Sub Indo",
+        "url": "https://raw.githubusercontent.com/lesmanae/cloudstream-plugins/builds/AnimeLoversProvider.cs3",
+        "name": "AnimeLoversProvider"
+    },
+    {
+        "iconUrl": "https://p19-novel-sg.ibyteimg.com/origin/novel-static-sg/004ff2b9ffde0cb106ff58c2a961e5a8",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/lesmanae/cloudstream-plugins",
+        "fileSize": 17145,
+        "status": 1,
+        "language": "id",
+        "authors": [
+            "lesmanae"
+        ],
+        "tvTypes": [
+            "TvSeries"
+        ],
+        "version": 1,
+        "internalName": "MeloloProvider",
+        "description": "Short Drama dari Melolo",
+        "url": "https://raw.githubusercontent.com/lesmanae/cloudstream-plugins/builds/MeloloProvider.cs3",
+        "name": "MeloloProvider"
+    }
+]
