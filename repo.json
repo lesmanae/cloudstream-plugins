@@ -1,9 +1,9 @@
 {
     "name": "Lesmanae Repo",
-    "iconUrl": "https://p16-novel-sg.ibyteimg.com/img/novel-images-sg/68f08493803fb36da77f705a508d95f7-tplv-resize:570:810.jpg",
-    "description": "Plugin Short Drama by lesmanae",
+    "iconUrl": "https://p19-novel-sg.ibyteimg.com/origin/novel-static-sg/004ff2b9ffde0cb106ff58c2a961e5a8",
+    "description": "Plugin Short Drama & Anime by lesmanae",
     "manifestVersion": 1,
     "pluginLists": [
-        "https://raw.githubusercontent.com/lesmanae/TestPlugins/builds/plugins.json"
+        "https://raw.githubusercontent.com/lesmanae/cloudstream-plugins/builds/plugins.json"
     ]
 }
