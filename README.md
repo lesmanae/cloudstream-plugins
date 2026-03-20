@@ -17,6 +17,7 @@ https://raw.githubusercontent.com/lesmanae/cloudstream-plugins/master/repo.json
 | Plugin | Kategori | Bahasa | Status |
 |--------|----------|--------|--------|
 | Melolo | Short Drama | 🇮🇩 Indonesia | ✅ Aktif |
+| AnimeLovers | Anime Sub Indo | 🇮🇩 Indonesia | ✅ Aktif |
 
 ---
 
