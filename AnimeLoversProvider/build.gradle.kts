@@ -9,5 +9,5 @@ cloudstream {
     status = 1
     tvTypes = listOf("Anime")
     language = "id"
-    iconUrl = "https://otakudesu.blog/wp-content/uploads/2023/02/otakudesu-logo.png"
+    iconUrl = "https://play-lh.googleusercontent.com/hD60wyoknlElZEqvTBRmfhpCDb5jbJvf9wVTqR9fbxLJ46je3yxDJHuJ3ECe9CWJbMc=w480-h960-rw"
 }
