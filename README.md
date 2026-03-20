@@ -29,6 +29,17 @@ https://raw.githubusercontent.com/lesmanae/cloudstream-plugins/master/repo.json
 
 ---
 
+## 🌐 API
+
+Plugin ini menggunakan API dari **Sonzai X** dengan mirror pribadi via Cloudflare Workers.
+
+| API | URL |
+|-----|-----|
+| Sonzai X (Original) | [api.sonzaix.indevs.in](https://api.sonzaix.indevs.in) |
+| Mirror (Cloudflare Workers) | [proxy-api.o69o.qzz.io](https://proxy-api.o69o.qzz.io) |
+
+---
+
 ## 🙏 Terima Kasih
 
 Plugin ini dapat berjalan berkat API yang disediakan oleh **Sonzai X**.
